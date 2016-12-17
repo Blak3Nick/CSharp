@@ -2,10 +2,16 @@ namespace CardGameBlake
 {
 	class BasicPawn
     {
-        readonly string Description = "Basic unit with low attack and no special skills";
+           
+        public string Description = "Basic unit with low attack and no special skills";
         public string ReturnPawnDesc()
         {
             return Description;
+        }
+        public int Attack = 1;
+        public int ReturnAttack()
+        {
+            return Attack;
         }
     }
 }
