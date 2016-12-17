@@ -27,5 +27,7 @@ namespace CardGameBlake
         {
             return Attack;
         }
+        public double magicDefense = 15;
+        public double physicalDefense = 1;
     }
 }

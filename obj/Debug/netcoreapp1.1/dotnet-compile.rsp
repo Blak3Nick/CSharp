@@ -89,4 +89,5 @@
 --reference:/home/blak3nick/.nuget/packages/System.Xml.XDocument/4.3.0/ref/netstandard1.3/System.Xml.XDocument.dll
 /home/blak3nick/Desktop/Game/BasicPawn.cs
 /home/blak3nick/Desktop/Game/CardGame.cs
+/home/blak3nick/Desktop/Game/IceWizard.cs
 /home/blak3nick/Desktop/Game/Program.cs

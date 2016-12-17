@@ -6,7 +6,7 @@ namespace CardGameBlake
 	{
 		public static void Main()
 		{
-			BasicPawn pawn = new BasicPawn();
+			BasicPawn pawn = new BasicPawn(1, 1, 1, 1, 1);
             pawn.Description = "This is a basic unit with one attack.";
 			System.Console.WriteLine ("Hello world");
 			string returned = pawn.ReturnPawnDesc();
