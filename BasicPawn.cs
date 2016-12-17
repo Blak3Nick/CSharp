@@ -9,6 +9,7 @@ namespace CardGameBlake
             return Description;
         }
         public int Attack = 1;
+        public int Health = 5;
         public int ReturnAttack()
         {
             return Attack;
