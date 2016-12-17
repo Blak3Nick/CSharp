@@ -8,8 +8,8 @@ namespace CardGameBlake
         {
             return Description;
         }
-        public int Attack = 3;
-        public int Health = 2;
+        public double Attack = 3;
+        public double Health = 2;
         public double freezeChance = .75;
         public bool DidFreeze(double magicDefense)
         {
@@ -23,11 +23,22 @@ namespace CardGameBlake
             }
             return didFreeze;
         }
-        public int ReturnAttack()
+        public double ReturnAttack()
         {
             return Attack;
         }
         public double magicDefense = 15;
         public double physicalDefense = 1;
-    }
+        public int manaCost = 3;
+    
+        public IceWizard(double attack, double health, double magicDef, double physicalDef, int manaCost )
+        {
+            this.Attack = attack;
+            this.Health = health;
+            this.magicDefense = magicDef;
+            this.physicalDefense = physicalDef;
+            this.manaCost = manaCost;
+            
+        }
+        }
 }
