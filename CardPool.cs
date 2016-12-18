@@ -5,8 +5,8 @@ namespace CardGameBlake
         public int SelectCard(int numOfUnitType, int UserInput)
         {
             //numOfUnitType is the number that corresponds to the unit ex. Pawn = 1
-            // user will select how many of that type they want
-            // selectedCard will return how many of that type to the players card pool
+           
+            // selectedCard will return which card type has been selected
             int selectedCard = 0;
             return selectedCard;
         }
@@ -20,9 +20,25 @@ namespace CardGameBlake
         {
             this.numOfPawns = pawns;
         }
+        public void setNumOfGiants(int giants)
+        {
+            this.numOfGiants = giants;
+        }
         public int getNumOfPawns()
         {
             return this.numOfPawns;
+        }
+        public int getNumOfGiants()
+        {
+            return this.numOfGiants;
+        }
+        public void setNumOfIceWizards(int icewizards)
+        {
+            this.numOfIceWizards = icewizards;
+        }
+        public int getNumOfIceWizards()
+        {
+            return this.numOfIceWizards;
         }
 
     }
