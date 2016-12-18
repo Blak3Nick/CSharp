@@ -8,7 +8,7 @@ namespace CardGameBlake
         {
             return Description;
         }
-        public readonly double Attack = 1;
+        public readonly double Attack = 5;
         public readonly double Health = 5;
         public double ReturnAttack()
         {
