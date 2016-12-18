@@ -6,13 +6,17 @@ namespace CardGameBlake
 	{
 		public static void Main()
 		{
-			BasicPawn pawn = new BasicPawn(1, 1, 1, 1, 1);
-            pawn.Description = "This is a basic unit with one attack.";
-			System.Console.WriteLine ("Hello world");
-			string returned = pawn.ReturnPawnDesc();
-			System.Console.WriteLine (returned);
-            pawn.Attack = 1;
-            Console.WriteLine("The pawn has "+ pawn.Attack+" power.");
+			CardPool player1CardPool = new CardPool();
+			CardPool player2CardPool = new CardPool();
+			ConvertString convert = new ConvertString();
+            Console.WriteLine("PLayer 1, How many pawns would you like?");
+			string PawnSelection = Console.ReadLine();
+			int intPawnSelection = convert.Convert(PawnSelection);
+			GameLaunch game = new GameLaunch(7,7);
+			
+			player1CardPool.setNumOfPawns(intPawnSelection);
+			int pawns = player1CardPool.getNumOfPawns();
+			Console.WriteLine("Your number of pawns is "+ pawns);
 		}
 	}
 }
