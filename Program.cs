@@ -35,7 +35,8 @@ namespace CardGameBlake
 			BasicPawn pawn1 = new BasicPawn();
 			Console.WriteLine(pawn1.Attack+ pawn1.Description + pawn1.Health);
 			AdvancedPawn adPawn1 = new AdvancedPawn(1, 2);
-			
+			GameBoard gameBoard = new GameBoard();
+			Console.WriteLine(gameBoard.xAxis);
 			MapLocation mapLocation = new MapLocation(4,9);
 			bool isonmap = mapLocation.checkMapLocation(mapLocation.xLocation, mapLocation.yLocation);
 			Console.WriteLine(isonmap);

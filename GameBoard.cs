@@ -2,10 +2,12 @@ namespace CardGameBlake
 {
     class GameBoard
     {
+        public int xAxis = 8;
+        public int yAxis = 6;
         public GameBoard()
         {
-            int xAxis = 8;
-            int yAxis = 6;
+             this.xAxis = 8;
+             this.yAxis = 6;
 
         }
      }
