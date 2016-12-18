@@ -32,7 +32,11 @@ namespace CardGameBlake
 			int giants = player1CardPool.getNumOfGiants();
 			Console.WriteLine("Your number of Giants is "+ giants);
 
-
+			BasicPawn pawn1 = new BasicPawn();
+			Console.WriteLine(pawn1.Attack+ pawn1.Description + pawn1.Health);
+			AdvancedPawn adPawn1 = new AdvancedPawn(1, 2);
+			
+			Console.WriteLine(adPawn1);
 
 		}
 	}
