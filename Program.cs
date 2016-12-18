@@ -36,7 +36,7 @@ namespace CardGameBlake
 			Console.WriteLine(pawn1.Attack+ pawn1.Description + pawn1.Health);
 			AdvancedPawn adPawn1 = new AdvancedPawn(1, 2);
 			
-			Console.WriteLine(adPawn1);
+			Console.WriteLine(adPawn1.Description);
 
 		}
 	}
