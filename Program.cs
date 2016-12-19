@@ -41,9 +41,14 @@ namespace CardGameBlake
 			bool isonmap = mapLocation.checkMapLocation(mapLocation.xLocation, mapLocation.yLocation);
 			Console.WriteLine(isonmap);
 
+            IceWizard iceWizard = new IceWizard();
 			AttackSequence attackSequence = new AttackSequence();
 			adPawn1.Health = attackSequence.physicalAttack(pawn1.Attack, adPawn1.physicalDefense, adPawn1.Health);
 			Console.WriteLine(adPawn1.Health);
+            Ice icePawn = new Ice();
+            bool didFreeze = icePawn.freezeAttack(adPawn1.magicDefense, iceWizard.freezeChance);
+            Console.WriteLine(didFreeze);
+            Console.Read();
 
 		}
 	}
