@@ -7,6 +7,10 @@ namespace CardGameBlake
         public double magicDefense = 0;
         public double physicalDefense = 0;
         public int manaCost = 1;
+        public void makeSummonSound()
+        {
+            //This is the method for emiting a sound when summoning the unit 
+        }
 
         
 
