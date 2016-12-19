@@ -9,13 +9,5 @@ namespace CardGameBlake
         public double physicalDefense = 8;
         public int manaCost = 0;
 
-        public AdvancedPawn()
-        {
-            this.Attack = 4;
-            this.Health = 15;
-            this.magicDefense = 4;
-            this.physicalDefense = 8;
-            this.manaCost = 0;
-        }
     }
 }
